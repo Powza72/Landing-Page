@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#developer  {
+    font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  /* กำหนดความสูงถ้าจำเป็น */
+  min-height: 40px;
+}
+#greeting{
+font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  width:400px; /* ปรับตามความยาวที่เหมาะสม */
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  /* กำหนดความสูงถ้าจำเป็น */
+  min-height: 40px;
+}
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stlye.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'orange': '#E35205',
+                        'gold': '#FFB300',
+                        'dark': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#212121] font-['Poppins'] text-white m-0 p-0">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full px-[10%] py-5 bg-orange flex justify-between items-center z-50">
+        <h1 id="greeting" class="font-['Courier_New'] text-2xl font-semibold">Hello, World!</h1>
+        <nav>
+            <a href="#" class="text-lg font-bold ml-9 hover:text-gold transition-colors">Home</a>
+            <a href="#" class="text-lg font-bold ml-9 hover:text-gold transition-colors">About Me</a>
+            <a href="#" class="text-lg font-bold ml-9 hover:text-gold transition-colors">Certificate</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center px-[10%]">
+        <div class="max-w-xl pt-24">
+            <h1 class="text-5xl font-bold mb-5">Panaton Bunpasan</h1>
+            <h3 id="developer" class="font-['Courier_New'] text-3xl font-bold text-orange mb-4">I want to be a Full-S</h3>
+            <p class="text-base mt-3">ผมชื่อ ปัณณธร บุญประสาร ผมมีความสนใจในด้าน Web Development และตั้งใจพัฒนาทักษะของตัวเองเพื่อก้าวไปสู่การเป็น Web Developer ที่สามารถสร้างสรรค์เว็บไซต์ที่มีคุณภาพและตอบโจทย์การใช้งานจริงได้</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="absolute bottom-16 flex space-x-4">
+            <a href="#" class="flex justify-center items-center w-10 h-10 border-2 border-gold rounded-full text-gold">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="#" class="flex justify-center items-center w-10 h-10 border-2 border-gold rounded-full text-gold">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" class="flex justify-center items-center w-10 h-10 border-2 border-gold rounded-full text-gold">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-orange inline-block relative mb-4">
+            About Me
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Started from Science–Technology in high school, now diving deep into Computer Engineering at KMUTT.
+
+</p>
+    </div>
+    
+        <!-- Text Content -->
+        <div class=" bg-dark space-y-6 text-white">
+            <div class="bg-dark p-6 rounded-lg shadow-md border-l-4 border-orange hover:shadow-lg transition duration-300">
+                <p class="mb-4 leading-relaxed">
+                    Hello, I'm <span class="font-semibold text-orange">Panaton Bunprasan</span>, a computer engineering student at KMUTT, passionate about solving complex problems and building innovative technology solutions. My studies have provided me with a solid foundation in software development, hardware design, and system architecture.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    I enjoy working on projects involving programming, algorithm development, and embedded systems, and I am keen on exploring the latest trends in AI, machine learning, and cybersecurity. Whether it's writing efficient code or designing robust systems, I constantly seek challenges and opportunities to push the boundaries of technology.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    In addition to my technical skills, I believe in the importance of collaboration and knowledge sharing. I am always eager to engage with fellow students, professionals, and enthusiasts who share a passion for technology. Whether it's through group projects, hackathons, or online discussions, I enjoy exchanging ideas and learning from others' experiences.
+                </p>
+                <p class="leading-relaxed">
+                    Feel free to explore my projects below, and don't hesitate to reach out if you'd like to collaborate or discuss new opportunities.
+                </p>
+            </div>
+        </div>
+
+        <section id="about" class="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-orange inline-block relative mb-4">
+            Education
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Computer Engineering Student at KMUTT</p>
+    </div>
+
+    <div class=" bg-dark space-y-6 text-white">
+            <div class="bg-dark p-6 rounded-lg shadow-md border-l-4 border-orange hover:shadow-lg transition duration-300">
+                <p class="mb-4 leading-relaxed">
+                    Hello, I'm <span class="font-semibold text-orange">Panaton Bunprasan</span>, a computer engineering student at KMUTT, passionate about solving complex problems and building innovative technology solutions. My studies have provided me with a solid foundation in software development, hardware design, and system architecture.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    I enjoy working on projects involving programming, algorithm development, and embedded systems, and I am keen on exploring the latest trends in AI, machine learning, and cybersecurity. Whether it's writing efficient code or designing robust systems, I constantly seek challenges and opportunities to push the boundaries of technology.
+                </p>
+                <p class="mb-4 leading-relaxed">
+                    In addition to my technical skills, I believe in the importance of collaboration and knowledge sharing. I am always eager to engage with fellow students, professionals, and enthusiasts who share a passion for technology. Whether it's through group projects, hackathons, or online discussions, I enjoy exchanging ideas and learning from others' experiences.
+                </p>
+                <p class="leading-relaxed">
+                    Feel free to explore my projects below, and don't hesitate to reach out if you'd like to collaborate or discuss new opportunities.
+                </p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
