@@ -1,5 +1,5 @@
 const greetingTexts = ["Hello, World!", "<h1>Hello, World!</h1>"]; 
-const developerTexts = ["I want to be a Full-Stack developer", "I want to be a Web developer"]; 
+const developerTexts = ["I want to be a Full-Stack dev", "I want to be a Web developer"]; 
 let greetingIndex = 0; 
 let developerIndex = 0; 
 let charIndexGreeting = 0; 

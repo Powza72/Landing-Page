@@ -1,202 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panaton's Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'orange': '#E35205',
-                        'gold': '#FFB300',
-                        'dark': '#1a1a1a',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orange: "#E35205",
+              gold: "#FFB300",
+              dark: "#1a1a1a",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
+      @keyframes typing {
+        from {
+          width: 0;
         }
-        .typing-animation {
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 3s steps(30, end);
+        to {
+          width: 100%;
         }
+      }
+      .typing-animation {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(30, end);
+      }
     </style>
-</head>
-<body class="bg-[#212121] font-['Poppins'] text-white m-0 p-0">
-
+  </head>
+  <body class="bg-[#212121] font-['Poppins'] text-white m-0 p-0">
     <!-- Mobile Menu Button (visible only on small screens) -->
     <div class="fixed top-5 right-5 z-50 md:hidden">
-        <button id="menuBtn" class="text-white text-3xl focus:outline-none">
-            <i class='bx bx-menu'></i>
-        </button>
+      <button id="menuBtn" class="text-white text-3xl focus:outline-none">
+        <i class="bx bx-menu"></i>
+      </button>
     </div>
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full px-4 sm:px-6 lg:px-[10%] py-4 bg-orange flex justify-between items-center z-40">
-        <h1 id="greeting" class="font-['Courier_New'] text-xl sm:text-2xl font-semibold">Hello, World!</h1>
-        
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:block">
-            <a href="#" class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors">Home</a>
-            <a href="#about" class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors">About Me</a>
-            <a href="#education" class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors">Education</a>
-        </nav>
+    <header
+      class="fixed top-0 left-0 w-full px-4 sm:px-6 lg:px-[10%] py-4 bg-orange flex justify-between items-center z-40"
+    >
+      <h1
+        id="greeting"
+        class="font-['Courier_New'] text-xl sm:text-2xl font-semibold"
+      >
+        Hello, World!
+      </h1>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:block">
+        <a
+          href="#"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          >About Me</a
+        >
+        <a
+          href="#education"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          >Education</a
+        >
+        <a
+          href="#Project"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          >Project</a
+        >
+      </nav>
     </header>
 
     <!-- Mobile Navigation (hidden by default) -->
-    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-dark bg-opacity-95 z-40 flex flex-col items-center justify-center transform -translate-x-full transition-transform duration-300 md:hidden">
-        <button id="closeBtn" class="absolute top-5 right-5 text-3xl text-white">
-            <i class='bx bx-x'></i>
-        </button>
-        <nav class="flex flex-col items-center space-y-8">
-            <a href="#" class="text-xl font-bold hover:text-gold transition-colors">Home</a>
-            <a href="#about" class="text-xl font-bold hover:text-gold transition-colors">About Me</a>
-            <a href="#education" class="text-xl font-bold hover:text-gold transition-colors">Education</a>
-        </nav>
+    <div
+      id="mobileMenu"
+      class="fixed top-0 left-0 w-full h-full bg-dark bg-opacity-95 z-40 flex flex-col items-center justify-center transform -translate-x-full transition-transform duration-300 md:hidden"
+    >
+      <button id="closeBtn" class="absolute top-5 right-5 text-3xl text-white">
+        <i class="bx bx-x"></i>
+      </button>
+      <nav class="flex flex-col items-center space-y-8">
+        <a href="#" class="text-xl font-bold hover:text-gold transition-colors"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="text-xl font-bold hover:text-gold transition-colors"
+          >About Me</a
+        >
+        <a
+          href="#education"
+          class="text-xl font-bold hover:text-gold transition-colors"
+          >Education</a
+        >
+      </nav>
     </div>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16">
-        <div class="max-w-xl" data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-5">Panaton Bunpasan</h1>
-            <h3 id="developer" class="font-['Courier_New'] text-xl sm:text-2xl md:text-3xl font-bold text-orange mb-3 sm:mb-4 typing-animation">Full-Stack Developer</h3>
-            <p class="text-sm sm:text-base mt-3">ผมชื่อ ปัณณธร บุญประสาร ผมมีความสนใจในด้าน Web Development และตั้งใจพัฒนาทักษะของตัวเองเพื่อก้าวไปสู่การเป็น Web Developer ที่สามารถสร้างสรรค์เว็บไซต์ที่มีคุณภาพและตอบโจทย์การใช้งานจริงได้</p>
-        </div>
+    <section
+      class="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16"
+    >
+      <div
+        class="max-w-xl mx-auto"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-5">
+          Panaton Bunpasan
+        </h1>
+        <h3
+          id="developer"
+          class="font-['Courier_New'] text-xl sm:text-2xl md:text-3xl font-bold text-orange mb-3 sm:mb-4 typing-animation"
+        >
+          Full-Stack Developer
+        </h3>
+        <p class="text-sm sm:text-base mt-3">
+          ผมชื่อ ปัณณธร บุญประสาร ผมมีความสนใจในด้าน Web Development
+          และตั้งใจพัฒนาทักษะของตัวเองเพื่อก้าวไปสู่การเป็น Web Developer
+          ที่สามารถสร้างสรรค์เว็บไซต์ที่มีคุณภาพและตอบโจทย์การใช้งานจริงได้
+        </p>
+      </div>
 
-        <!-- Social Media Links -->
-        <div class="mt-12 sm:mt-16 md:absolute md:bottom-16 flex space-x-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://www.facebook.com/panaton.bunpasan" class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-gold rounded-full text-gold hover:bg-gold hover:text-dark transition-colors">
-                <i class='bx bxl-facebook-circle text-lg sm:text-xl'></i>
-            </a>
-            <a href="#" class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-gold rounded-full text-gold hover:bg-gold hover:text-dark transition-colors">
-                <i class='bx bxl-instagram text-lg sm:text-xl'></i>
-            </a>
-            <a href="https://github.com/Powza72" class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-gold rounded-full text-gold hover:bg-gold hover:text-dark transition-colors">
-                <i class='bx bxl-github text-lg sm:text-xl'></i>
-            </a>
-        </div>
+      <!-- Social Media Links -->
+      <div class="mt-12 sm:mt-16 md:absolute md:bottom-16 flex space-x-4">
+        <a
+          href="https://www.facebook.com/panaton.bunpasan"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:bg-white hover:text-dark transition-colors"
+        >
+          <i class="bx bxl-facebook-circle text-lg sm:text-xl"></i>
+        </a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:bg-white hover:text-dark transition-colors"
+        >
+          <i class="bx bxl-instagram text-lg sm:text-xl"></i>
+        </a>
+        <a
+          href="https://github.com/Powza72"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:bg-white hover:text-dark transition-colors"
+        >
+          <i class="bx bxl-github text-lg sm:text-xl"></i>
+        </a>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-12 sm:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
-        <div class="text-center mb-8 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-            <h2 class="text-3xl sm:text-4xl font-bold text-orange inline-block relative mb-2 sm:mb-4">
-                About Me
-            </h2>
-            <p class="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto">
-                Started from Science–Technology in high school, now diving deep into Computer Engineering at KMUTT.
-            </p>
+    <section
+      id="about"
+      class="py-12 sm:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto"
+    >
+      <div
+        class="text-center mb-8 sm:mb-12"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-orange inline-block relative mb-2 sm:mb-4"
+        >
+          About Me
+        </h2>
+        <p class="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto">
+          Started from Science–Technology in high school, now diving deep into
+          Computer Engineering at KMUTT.
+        </p>
+      </div>
+
+      <!-- Text Content -->
+      <div class="bg-dark space-y-6 text-white">
+        <div
+          class="bg-dark p-4 sm:p-6 rounded-lg shadow-md border-l-4 border-orange hover:shadow-lg transition duration-300"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <p class="mb-4 leading-relaxed text-sm sm:text-base">
+            Hello, I'm
+            <span class="font-semibold text-orange">Panaton Bunprasan</span>, a
+            computer engineering student at KMUTT, passionate about solving
+            complex problems and building innovative technology solutions. My
+            studies have provided me with a solid foundation in software
+            development, hardware design, and system architecture.
+          </p>
+          <p class="mb-4 leading-relaxed text-sm sm:text-base">
+            I enjoy working on projects involving programming, algorithm
+            development, and embedded systems, and I am keen on exploring the
+            latest trends in AI, machine learning, and cybersecurity. Whether
+            it's writing efficient code or designing robust systems, I
+            constantly seek challenges and opportunities to push the boundaries
+            of technology.
+          </p>
+          <p class="mb-4 leading-relaxed text-sm sm:text-base">
+            In addition to my technical skills, I believe in the importance of
+            collaboration and knowledge sharing. I am always eager to engage
+            with fellow students, professionals, and enthusiasts who share a
+            passion for technology. Whether it's through group projects,
+            hackathons, or online discussions, I enjoy exchanging ideas and
+            learning from others' experiences.
+          </p>
+          <p class="leading-relaxed text-sm sm:text-base">
+            Feel free to explore my projects below, and don't hesitate to reach
+            out if you'd like to collaborate or discuss new opportunities.
+          </p>
         </div>
-        
-        <!-- Text Content -->
-        <div class="bg-dark space-y-6 text-white">
-            <div class="bg-dark p-4 sm:p-6 rounded-lg shadow-md border-l-4 border-orange hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                <p class="mb-4 leading-relaxed text-sm sm:text-base">
-                    Hello, I'm <span class="font-semibold text-orange">Panaton Bunprasan</span>, a computer engineering student at KMUTT, passionate about solving complex problems and building innovative technology solutions. My studies have provided me with a solid foundation in software development, hardware design, and system architecture.
-                </p>
-                <p class="mb-4 leading-relaxed text-sm sm:text-base">
-                    I enjoy working on projects involving programming, algorithm development, and embedded systems, and I am keen on exploring the latest trends in AI, machine learning, and cybersecurity. Whether it's writing efficient code or designing robust systems, I constantly seek challenges and opportunities to push the boundaries of technology.
-                </p>
-                <p class="mb-4 leading-relaxed text-sm sm:text-base">
-                    In addition to my technical skills, I believe in the importance of collaboration and knowledge sharing. I am always eager to engage with fellow students, professionals, and enthusiasts who share a passion for technology. Whether it's through group projects, hackathons, or online discussions, I enjoy exchanging ideas and learning from others' experiences.
-                </p>
-                <p class="leading-relaxed text-sm sm:text-base">
-                    Feel free to explore my projects below, and don't hesitate to reach out if you'd like to collaborate or discuss new opportunities.
-                </p>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-12 sm:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
-        <div class="text-center mb-8 sm:mb-12" data-aos="fade-up" data-aos-duration="800">
-            <h2 class="text-3xl sm:text-4xl font-bold text-orange inline-block relative mb-2 sm:mb-4">
-                Education
-            </h2>
-            <p class="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto">Computer Engineering Student at KMUTT</p>
+    <section id="education" class="py-12 max-w-7xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-orange mb-4">Education</h2>
+        <p class="text-gray-400 max-w-3xl mx-auto">
+          Computer Engineering Student at KMUTT
+        </p>
+      </div>
+
+      <div class="bg-dark space-y-6 text-white">
+        <!-- รายการที่ 1 -->
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange"
+          data-aos="fade-up"
+        >
+          <h3 class="text-xl font-bold text-orange">Primary 1–4</h3>
+          <p class="text-gray-300">Assumption ubon</p>
+          <p class="text-gray-400 mt-2">2021 - Present</p>
+          <p>Currently pursuing my degree...</p>
         </div>
 
-        <div class="bg-dark space-y-6 text-white">
-            <div class="bg-dark p-4 sm:p-6 rounded-lg shadow-md border-l-4 border-orange hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-bold text-orange">King Mongkut's University of Technology Thonburi</h3>
-                        <p class="text-sm sm:text-base text-gray-300">Bachelor of Engineering - Computer Engineering</p>
-                    </div>
-                    <p class="text-sm text-gray-400 mt-1 sm:mt-0">2021 - Present</p>
-                </div>
-                <p class="text-sm sm:text-base leading-relaxed">
-                    Currently pursuing my degree in Computer Engineering, focusing on software development, algorithms, data structures, and web technologies. Actively participating in coding competitions and collaborative projects to enhance my technical skills.
-                </p>
-            </div>
-            
-            <div class="bg-dark p-4 sm:p-6 rounded-lg shadow-md border-l-4 border-orange hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="400">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-bold text-orange">High School</h3>
-                        <p class="text-sm sm:text-base text-gray-300">Science-Technology Program</p>
-                    </div>
-                    <p class="text-sm text-gray-400 mt-1 sm:mt-0">2018 - 2021</p>
-                </div>
-                <p class="text-sm sm:text-base leading-relaxed">
-                    Completed my high school education with a focus on Science and Technology, which laid the foundation for my interest in engineering and computer science.
-                </p>
-            </div>
+        <!-- รายการที่ 2 -->
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange"
+          data-aos="fade-up"
+        >
+          <h3 class="text-xl font-bold text-orange">Primary 4-6</h3>
+          <p class="text-gray-300">Satit demonsation School Ubonrachatani</p>
+          <p class="text-gray-400 mt-2">2018 - 2021</p>
+          <p>Completed my high school education...</p>
         </div>
-    </section>
+
+        <!-- รายการที่ 3 (ซ่อนก่อน) -->
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange hidden"
+          data-aos="fade-up"
+        >
+          <h3 class="text-xl font-bold text-orange">Lower Secondary School</h3>
+          <p class="text-gray-300">Satit demonsation School Ubonrachatani</p>
+          <p class="text-gray-400 mt-2">2018 - 2021</p>
+          <p>Completed my high school education...</p>
+        </div>
+
+        <!-- รายการที่ 4 (ซ่อนก่อน) -->
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange hidden"
+          data-aos="fade-up"
+        >
+          <h3 class="text-xl font-bold text-orange">Lower Secondary School</h3>
+          <p class="text-gray-300">Satit demonsation School Ubonrachatani</p>
+          <p class="text-gray-400 mt-2">2018 - 2021</p>
+          <p>Completed my high school education...</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-6">
+        <button
+          id="seeMoreBtn"
+          class="px-4 py-2 bg-orange text-white rounded hover:bg-orange-dark transition"
+        >
+          See More
+        </button>
+      </div>
+   <!-- Project Section -->
+      <section id="Project" class="py-12 max-w-7xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-orange mb-4">Activities and Projects</h2>
+      </div>
+      <div class="bg-dark space-y-6 text-white">
+        <!-- รายการที่ 1 -->
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange hover:scale-105 transform transition duration-300 ease-in-out"
+  data-aos="fade-up"
+        >
+          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">Activity 1: SiSaKet Hackathon 2024</h3>
+          <p>my very first hackathon and also my first experience programming in <span class="text-orange font-bold"> Swift. </span> The competition lasted three days and two nights. This event ignited my passion for coding and gave me the opportunity to present my project for the first time in front of an audience at a conference room.</p>
+          <a href="SiSaKet.Html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
+             Read More →
+            </a>
+        </div>
+
+        <!-- รายการที่ 2 -->
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange"
+          data-aos="fade-up"
+        >
+          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">Activity 2: ComCamp 36</h3>
+          <p>Held at King Mongkut’s University of Technology Thonburi (KMUTT), this was the first camp I decided to apply for</p>
+          <p>and I was one of the 100 participants selected out of approximately 2,000 applicants.
+            Throughout the camp</p>
+            <p> I gained hands-on experience in several areas including C Programming, Web Development, Game Development, and AI Development.</p>
+          <a href="SiSaKet.Html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
+             Read More →
+            </a>
+        </div>
+
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange"
+          data-aos="fade-up"
+        >
+          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">Activity 3: ITCAMP 21 - The Glacial Horizon</h3>
+          <p>Held at King Mongkut’s University of Technology Thonburi (KMUTT), this was the first camp I decided to apply for</p>
+          <p>and I was one of the 100 participants selected out of approximately 2,000 applicants.
+            Throughout the camp</p>
+            <p> I gained hands-on experience in several areas including C Programming, Web Development, Game Development, and AI Development.</p>
+          <a href="SiSaKet.Html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
+             Read More →
+            </a>
+        </div>
+
+        <div
+          class="education-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange"
+          data-aos="fade-up"
+        >
+          <h3 class="text-xl font-bold text-orange">Activity 4: Thailand Robot & Coding Challenge 2025</h3>
+          <p class="text-gray-300">Honorable Mention</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quidem ullam corporis cum alias. Animi corporis eaque voluptatum quasi optio.</p>
+          <a href="SiSaKet.Html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
+             Read More →
+            </a>
+        </div>
+
+        
 
     <script>
-        // Mobile menu functionality
-        const menuBtn = document.getElementById('menuBtn');
-        const closeBtn = document.getElementById('closeBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('-translate-x-full');
-            mobileMenu.classList.add('translate-x-0');
-        });
-
-        closeBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-0');
-            mobileMenu.classList.add('-translate-x-full');
-        });
-
-        // Close mobile menu when a link is clicked
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('translate-x-0');
-                mobileMenu.classList.add('-translate-x-full');
-            });
-        });
-
-        // Typing animation for the developer text
-        document.addEventListener('DOMContentLoaded', function() {
-            const developerText = document.getElementById('developer');
-            developerText.textContent = "Full-Stack Developer";
-            
-            // Initialize AOS
-            AOS.init({
-                duration: 1000,
-                once: false,
-                mirror: true,
-                easing: 'ease-in-out',
-                offset: 120
-            });
-        });
+      
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-</body>
+    <script src="AutoType.js"></script>
+    <script src="hidden.js"></script>
+    <script src="responsive.js"></script>
+  </body>
 </html>

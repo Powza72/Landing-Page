@@ -1,40 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-#developer  {
-    font-family: 'Courier New', Courier, monospace;
+#greeting, #developer {
+  font-family: 'Courier New', Courier, monospace;
   display: inline-block;
-  white-space: nowrap;
+  width: 500px;
+  white-space: pre;
   overflow: hidden;
   text-align: center;
-  /* กำหนดความสูงถ้าจำเป็น */
   min-height: 40px;
+  height: 40px; /* บังคับความสูง */
+  line-height: 40px; /* ให้ข้อความอยู่ตรงกลาง */
 }
-#greeting{
-font-family: 'Courier New', Courier, monospace;
-  display: inline-block;
-  width:400px; /* ปรับตามความยาวที่เหมาะสม */
-  white-space: nowrap;
-  overflow: hidden;
-  text-align: center;
-  /* กำหนดความสูงถ้าจำเป็น */
-  min-height: 40px;
-}
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
