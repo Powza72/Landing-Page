@@ -13,7 +13,7 @@ function typeGreetingText() {
     let currentGreetingText = greetingTexts[greetingIndex];
 
     if (charIndexGreeting < currentGreetingText.length) {
-        greetingElement.innerText = currentGreetingText.substring(0, charIndexGreeting + 1);
+        greetingElement.textContent = currentGreetingText.substring(0, charIndexGreeting + 1);
         charIndexGreeting++;
         setTimeout(typeGreetingText, typingSpeed);
     } else {

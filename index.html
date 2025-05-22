@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script>
       tailwind.config = {
@@ -22,6 +27,7 @@
               orange: "#E35205",
               gold: "#FFB300",
               dark: "#1a1a1a",
+              sliver:"#C0C0C0"
             },
           },
         },
@@ -131,13 +137,9 @@
     <section
       class="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16"
     >
-      <div
-        class="max-w-xl mx-auto"
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
+      <div class="max-w-xl mx-auto">
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-5">
-          Panaton Bunpasan
+          Panaton  <span class="text-orange">Bunpasan</span>
         </h1>
         <h3
           id="developer"
@@ -156,21 +158,21 @@
       <div class="mt-12 sm:mt-16 md:absolute md:bottom-16 flex space-x-4">
         <a
           href="https://www.facebook.com/panaton.bunpasan"
-          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:bg-white hover:text-dark transition-colors"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 transition-transform duration-300"
           aria-label="Facebook"
         >
           <i class="bx bxl-facebook-circle text-lg sm:text-xl"></i>
         </a>
         <a
           href="#"
-          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:bg-white hover:text-dark transition-colors"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 transition-transform duration-300"
           aria-label="Instagram"
         >
           <i class="bx bxl-instagram text-lg sm:text-xl"></i>
         </a>
         <a
           href="https://github.com/Powza72"
-          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:bg-white hover:text-dark transition-colors"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 transition-transform duration-300"
           aria-label="GitHub"
         >
           <i class="bx bxl-github text-lg sm:text-xl"></i>
@@ -265,7 +267,9 @@
           data-aos="fade-up"
         >
           <h3 class="text-xl font-bold text-orange">Primary 4-6</h3>
-          <p class="text-gray-300">Satit Demonstration School Ubonratchathani</p>
+          <p class="text-gray-300">
+            Satit Demonstration School Ubonratchathani
+          </p>
           <p class="text-gray-400 mt-2">2015 - 2018</p>
           <p>Continued my primary education at Satit Demonstration School.</p>
         </div>
@@ -276,9 +280,14 @@
           data-aos="fade-up"
         >
           <h3 class="text-xl font-bold text-orange">Lower Secondary School</h3>
-          <p class="text-gray-300">Satit Demonstration School Ubonratchathani</p>
+          <p class="text-gray-300">
+            Satit Demonstration School Ubonratchathani
+          </p>
           <p class="text-gray-400 mt-2">2018 - 2021</p>
-          <p>Completed my lower secondary education with focus on science and mathematics.</p>
+          <p>
+            Completed my lower secondary education with focus on science and
+            mathematics.
+          </p>
         </div>
 
         <!-- รายการที่ 4 (ซ่อนก่อน) -->
@@ -287,9 +296,14 @@
           data-aos="fade-up"
         >
           <h3 class="text-xl font-bold text-orange">Upper Secondary School</h3>
-          <p class="text-gray-300">Satit Demonstration School Ubonratchathani</p>
+          <p class="text-gray-300">
+            Satit Demonstration School Ubonratchathani
+          </p>
           <p class="text-gray-400 mt-2">2021 - 2024</p>
-          <p>Specialized in Science-Technology program, where I developed my interest in computer engineering.</p>
+          <p>
+            Specialized in Science-Technology program, where I developed my
+            interest in computer engineering.
+          </p>
         </div>
       </div>
 
@@ -306,18 +320,31 @@
     <!-- Project Section -->
     <section id="projects" class="py-12 max-w-7xl mx-auto px-4">
       <div class="text-center mb-8">
-        <h2 class="text-3xl font-bold text-orange mb-4">Activities and Projects</h2>
+        <h2 class="text-3xl font-bold text-orange mb-4">
+          Activities and Projects
+        </h2>
       </div>
       <div class="bg-dark space-y-6 text-white">
         <!-- รายการที่ 1 -->
         <div
-          class="project-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange hover:scale-105 transform transition duration-300 ease-in-out"
+          class="project-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange "
           data-aos="fade-up"
         >
-          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">Activity 1: SiSaKet Hackathon 2024</h3>
-          <p>My very first hackathon and also my first experience programming in <span class="text-orange font-bold"> Swift. </span> The competition lasted three days and two nights. This event ignited my passion for coding and gave me the opportunity to present my project for the first time in front of an audience at a conference room.</p>
-          <a href="SiSaKet.html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
-             Read More →
+          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">
+            Activity 1: SiSaKet Hackathon 2024
+          </h3>
+          <p>
+            My very first hackathon and also my first experience programming in
+            <span class="text-orange font-bold"> Swift. </span> The competition
+            lasted three days and two nights. This event ignited my passion for
+            coding and gave me the opportunity to present my project for the
+            first time in front of an audience at a conference room.
+          </p>
+          <a
+            href="SiSaKet.html"
+            class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md"
+          >
+            Read More →
           </a>
         </div>
 
@@ -326,10 +353,24 @@
           class="project-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange hover:scale-105 transform transition duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">Activity 2: ComCamp 36</h3>
-          <p>Held at King Mongkut's University of Technology Thonburi (KMUTT), this was the first camp I decided to apply for and I was <span class="font-bold text-orange">one of the 100 participants</span> selected out of approximately 2,000 applicants. Throughout the camp I gained hands-on experience in several areas including C Programming, Web Development, Game Development, and AI Development.</p>
-          <a href="ComCamp.html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
-             Read More →
+          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">
+            Activity 2: ComCamp 36
+          </h3>
+          <p>
+            Held at King Mongkut's University of Technology Thonburi (KMUTT),
+            this was the first camp I decided to apply for and I was
+            <span class="font-bold text-orange"
+              >one of the 100 participants</span
+            >
+            selected out of approximately 2,000 applicants. Throughout the camp
+            I gained hands-on experience in several areas including C
+            Programming, Web Development, Game Development, and AI Development.
+          </p>
+          <a
+            href="ComCamp.html"
+            class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md"
+          >
+            Read More →
           </a>
         </div>
 
@@ -338,10 +379,21 @@
           class="project-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange hover:scale-105 transform transition duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">Activity 3: ITCAMP 21 - The Glacial Horizon</h3>
-          <p>An intensive IT-focused camp where I had the opportunity to collaborate with like-minded peers and learn from industry professionals. The camp focused on emerging technologies and practical application of IT concepts that complemented my academic studies perfectly.</p>
-          <a href="ITCamp.html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
-             Read More →
+          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">
+            Activity 3: ITCAMP 21 - The Glacial Horizon
+          </h3>
+          <p>
+            An intensive IT-focused camp where I had the opportunity to
+            collaborate with like-minded peers and learn from industry
+            professionals. The camp focused on emerging technologies and
+            practical application of IT concepts that complemented my academic
+            studies perfectly.
+          </p>
+          <a
+            href="itcamp.html"
+            class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md"
+          >
+            Read More →
           </a>
         </div>
 
@@ -350,48 +402,82 @@
           class="project-item bg-dark p-4 rounded-lg shadow-md border-l-4 border-orange hover:scale-105 transform transition duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">Activity 4: Thailand Robot & Coding Challenge 2025</h3>
-          <p class="text-gold">Honorable Mention</p>
-          <p>Participated in this national competition that challenged my robotics and coding skills. Our team developed an innovative solution that earned us an Honorable Mention, showcasing our technical abilities and teamwork.</p>
-          <a href="RobotChallenge.html" class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md">
-             Read More →
+          <h3 class="mt-10 mb-8 text-xl font-bold text-orange">
+            Activity 4: Thailand Robot & Coding Challenge 2025 <br /><span
+              class="text-sliver"
+              >Honorable Mention</span
+            >
+          </h3>
+          <p>
+            Participated in this national competition that challenged my
+            robotics and coding skills. Our team developed an innovative
+            solution that earned us an Honorable Mention, showcasing our
+            technical abilities and teamwork.
+          </p>
+          <a
+            href="Coding.html"
+            class="inline-block mt-10 mb-10 rounded-full border-2 border-orange bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold px-6 py-2 shadow-md"
+          >
+            Read More →
           </a>
         </div>
       </div>
     </section>
     <!-- Skill  -->
     <section id="skills" class="py-16 px-6 " data-aos="fade-up">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-gold mb-8">Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg" data-aos="zoom-in">
-        <i class='bx bxl-html5 text-orange text-4xl mb-2'></i>
-        <p class="text-white">HTML</p>
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gold mb-8">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6  ">
+          <div
+            class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg  "
+            data-aos="zoom-in"
+          >
+            <i class="bx bxl-html5 text-orange text-4xl mb-2 "></i>
+            <p class="text-white">HTML</p>
+          </div>
+          <div
+            class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg hover:-translate-y-1 transition-transform duration-300"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <i class="bx bxl-css3 text-blue-400 text-4xl mb-2"></i>
+            <p class="text-white">CSS</p>
+          </div>
+          <div
+            class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <i class="bx bxl-javascript text-yellow-400 text-4xl mb-2"></i>
+            <p class="text-white">JavaScript</p>
+          </div>
+          <div
+            class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <i class="bx bxl-python text-blue-300 text-4xl mb-2"></i>
+            <p class="text-white">Python</p>
+          </div>
+          <div
+            class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <i class="bx bxl-tailwind-css text-cyan-300 text-4xl mb-2"></i>
+            <p class="text-white">Tailwind CSS</p>
+          </div>
+          <div
+            class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <i class="bx bxl-figma text-red-400 text-4xl mb-2"></i>
+            <p class="text-white">figma</p>
+          </div>
+        </div>
       </div>
-      <div class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-        <i class='bx bxl-css3 text-blue-400 text-4xl mb-2'></i>
-        <p class="text-white">CSS</p>
-      </div>
-      <div class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-        <i class='bx bxl-javascript text-yellow-400 text-4xl mb-2'></i>
-        <p class="text-white">JavaScript</p>
-      </div>
-      <div class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
-        <i class='bx bxl-python text-blue-300 text-4xl mb-2'></i>
-        <p class="text-white">Python</p>
-      </div>
-      <div class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="400">
-        <i class='bx bxl-tailwind-css text-cyan-300 text-4xl mb-2'></i>
-        <p class="text-white">Tailwind CSS</p>
-      </div>
-      <div class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="500">
-        <i class='bx bxl-figma text-red-400 text-4xl mb-2'></i>
-        <p class="text-white">Git</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Footer Section -->
     <footer class="bg-dark text-white py-8 mt-12">
@@ -402,19 +488,33 @@
             <p class="text-sm text-gray-400 mt-2">Science–Technology Student</p>
           </div>
           <div class="flex space-x-6">
-            <a href="https://www.facebook.com/panaton.bunpasan" class="text-gray-400 hover:text-orange transition-colors" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/panaton.bunpasan"
+              class="text-gray-400 hover:text-orange transition-colors"
+              aria-label="Facebook"
+            >
               <i class="bx bxl-facebook-circle text-2xl"></i>
             </a>
-            <a href="#" class="text-gray-400 hover:text-orange transition-colors" aria-label="Instagram">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-orange transition-colors"
+              aria-label="Instagram"
+            >
               <i class="bx bxl-instagram text-2xl"></i>
             </a>
-            <a href="https://github.com/Powza72" class="text-gray-400 hover:text-orange transition-colors" aria-label="GitHub">
+            <a
+              href="https://github.com/Powza72"
+              class="text-gray-400 hover:text-orange transition-colors"
+              aria-label="GitHub"
+            >
               <i class="bx bxl-github text-2xl"></i>
             </a>
           </div>
         </div>
         <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p class="text-sm text-gray-400">© 2025 Panaton Bunpasan. All rights reserved.</p>
+          <p class="text-sm text-gray-400">
+            © 2025 Panaton Bunpasan. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

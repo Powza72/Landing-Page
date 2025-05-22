@@ -1,11 +1,12 @@
 #greeting, #developer {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  font-variant-ligatures: none;
   display: inline-block;
-  width: 500px;
   white-space: pre;
   overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
   text-align: center;
-  min-height: 40px;
-  height: 40px; /* บังคับความสูง */
-  line-height: 40px; /* ให้ข้อความอยู่ตรงกลาง */
+  width: 100%; /* หรือ width ฟิกซ์ เช่น 500px */
 }
