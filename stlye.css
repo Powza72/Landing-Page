@@ -10,3 +10,224 @@
   text-align: center;
   width: 100%; /* หรือ width ฟิกซ์ เช่น 500px */
 }
+@keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      .typing-animation {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(30, end);
+      }
+
+      /* Amazing animated background */
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #2d2d2d 100%);
+      }
+
+      .floating-shapes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(1px);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .shape:nth-child(1) {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(45deg, #E35205, #FFB300);
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+        animation-duration: 8s;
+      }
+
+      .shape:nth-child(2) {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(45deg, #FFB300, #E35205);
+        top: 60%;
+        left: 80%;
+        animation-delay: 2s;
+        animation-duration: 6s;
+      }
+
+      .shape:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(45deg, rgba(227, 82, 5, 0.3), rgba(255, 179, 0, 0.3));
+        top: 80%;
+        left: 20%;
+        animation-delay: 4s;
+        animation-duration: 10s;
+      }
+
+      .shape:nth-child(4) {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(45deg, #FFB300, rgba(227, 82, 5, 0.7));
+        top: 30%;
+        left: 70%;
+        animation-delay: 1s;
+        animation-duration: 7s;
+      }
+
+      .shape:nth-child(5) {
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(45deg, rgba(255, 179, 0, 0.2), rgba(227, 82, 5, 0.2));
+        top: 10%;
+        left: 60%;
+        animation-delay: 3s;
+        animation-duration: 9s;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px) rotate(0deg);
+          opacity: 0.7;
+        }
+        50% {
+          transform: translateY(-30px) rotate(180deg);
+          opacity: 1;
+        }
+      }
+
+      /* Particle system */
+      .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #FFB300;
+        border-radius: 50%;
+        animation: particle-float 15s linear infinite;
+      }
+
+      @keyframes particle-float {
+        0% {
+          transform: translateY(100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Glowing grid overlay */
+      .grid-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          linear-gradient(rgba(227, 82, 5, 0.1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(227, 82, 5, 0.1) 1px, transparent 1px);
+        background-size: 50px 50px;
+        animation: grid-glow 4s ease-in-out infinite alternate;
+      }
+
+      @keyframes grid-glow {
+        0% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 0.1;
+        }
+      }
+
+      /* Pulsing light effect */
+      .pulse-light {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(227, 82, 5, 0.3) 0%, rgba(255, 179, 0, 0.1) 50%, transparent 100%);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 3s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 0.5;
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.2);
+          opacity: 0.8;
+        }
+      }
+
+      /* Enhanced content styling */
+      .hero-content {
+        position: relative;
+        z-index: 10;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 2rem;
+        border: 1px solid rgba(227, 82, 5, 0.2);
+      }
+
+      /* Animated border */
+      .animated-border {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .animated-border::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, #E35205, #FFB300, #E35205, #FFB300);
+        border-radius: 22px;
+        z-index: -1;
+        animation: border-animation 3s linear infinite;
+        background-size: 200% 200%;
+      }
+
+      @keyframes border-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }

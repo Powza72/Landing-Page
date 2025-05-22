@@ -27,25 +27,18 @@
               orange: "#E35205",
               gold: "#FFB300",
               dark: "#1a1a1a",
-              sliver:"#C0C0C0"
+              sliver:"#C0C0C0",
+              react:"#00DBFF"
+
             },
           },
         },
       };
     </script>
     <style>
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-      .typing-animation {
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(30, end);
+      /* Smooth scrolling for the entire page */
+      html {
+        scroll-behavior: smooth;
       }
     </style>
   </head>
@@ -72,27 +65,27 @@
       <nav class="hidden md:block">
         <a
           href="#"
-          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors smooth-scroll"
           >Home</a
         >
         <a
           href="#about"
-          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors smooth-scroll"
           >About Me</a
         >
         <a
           href="#education"
-          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors smooth-scroll"
           >Education</a
         >
         <a
           href="#projects"
-          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors smooth-scroll"
           >Activities and Projects</a
         >
         <a
           href="#skills"
-          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors"
+          class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-gold transition-colors smooth-scroll"
           >skills</a
         >
       </nav>
@@ -107,78 +100,100 @@
         <i class="bx bx-x"></i>
       </button>
       <nav class="flex flex-col items-center space-y-8">
-        <a href="#" class="text-xl font-bold hover:text-gold transition-colors"
+        <a href="#" class="text-xl font-bold hover:text-gold transition-colors smooth-scroll"
           >Home</a
         >
         <a
           href="#about"
-          class="text-xl font-bold hover:text-gold transition-colors"
+          class="text-xl font-bold hover:text-gold transition-colors smooth-scroll"
           >About Me</a
         >
         <a
           href="#education"
-          class="text-xl font-bold hover:text-gold transition-colors"
+          class="text-xl font-bold hover:text-gold transition-colors smooth-scroll"
           >Education</a
         >
         <a
           href="#projects"
-          class="text-xl font-bold hover:text-gold transition-colors"
+          class="text-xl font-bold hover:text-gold transition-colors smooth-scroll"
           >Activities and Projects</a
         >
         <a
           href="#skills"
-          class="text-xl font-bold hover:text-gold transition-colors"
+          class="text-xl font-bold hover:text-gold transition-colors smooth-scroll"
           >skills</a
         >
       </nav>
     </div>
 
     <!-- Hero Section -->
-    <section
-      class="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16"
-    >
-      <div class="max-w-xl mx-auto">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-5">
-          Panaton  <span class="text-orange">Bunpasan</span>
-        </h1>
-        <h3
-          id="developer"
-          class="font-['Courier_New'] text-xl sm:text-2xl md:text-3xl font-bold text-orange mb-3 sm:mb-4 typing-animation"
-        >
-          Full-Stack Developer
-        </h3>
-        <p class="text-sm sm:text-base mt-3">
-          ผมชื่อ ปัณณธร บุญประสาร ผมมีความสนใจในด้าน Web Development
-          และตั้งใจพัฒนาทักษะของตัวเองเพื่อก้าวไปสู่การเป็น Web Developer
-          ที่สามารถสร้างสรรค์เว็บไซต์ที่มีคุณภาพและตอบโจทย์การใช้งานจริงได้
-        </p>
-      </div>
+    <section class="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16 overflow-hidden">
+  
+  <!-- Amazing Animated Background -->
+  <div class="hero-bg">
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    
+    <!-- Particle System -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+    
+    <!-- Pulsing Light -->
+    <div class="pulse-light"></div>
+  </div>
 
-      <!-- Social Media Links -->
-      <div class="mt-12 sm:mt-16 md:absolute md:bottom-16 flex space-x-4">
-        <a
-          href="https://www.facebook.com/panaton.bunpasan"
-          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 transition-transform duration-300"
-          aria-label="Facebook"
-        >
-          <i class="bx bxl-facebook-circle text-lg sm:text-xl"></i>
-        </a>
-        <a
-          href="#"
-          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 transition-transform duration-300"
-          aria-label="Instagram"
-        >
-          <i class="bx bxl-instagram text-lg sm:text-xl"></i>
-        </a>
-        <a
-          href="https://github.com/Powza72"
-          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 transition-transform duration-300"
-          aria-label="GitHub"
-        >
-          <i class="bx bxl-github text-lg sm:text-xl"></i>
-        </a>
-      </div>
-    </section>
+  <div class="max-w-xl mx-auto relative z-10">
+    <div class="hero-content animated-border">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-5 text-white">
+        Panaton <span class="text-orange">Bunpasan</span>
+      </h1>
+      <h3
+        id="developer"
+        class="font-['Courier_New'] text-xl sm:text-2xl md:text-3xl font-bold text-orange mb-3 sm:mb-4 typing-animation"
+      >
+        Full-Stack Developer
+      </h3>
+      <p class="text-sm sm:text-base mt-3 text-gray-200">
+        ผมชื่อ ปัณณธร บุญประสาร ผมมีความสนใจในด้าน Web Development
+        และตั้งใจพัฒนาทักษะของตัวเองเพื่อก้าวไปสู่การเป็น Web Developer
+        ที่สามารถสร้างสรรค์เว็บไซต์ที่มีคุณภาพและตอบโจทย์การใช้งานจริงได้
+      </p>
+    </div>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="mt-12 sm:mt-16 md:absolute md:bottom-16 flex space-x-4 relative z-10">
+    <a
+      href="https://www.facebook.com/panaton.bunpasan"
+      class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300"
+      aria-label="Facebook"
+    >
+      <i class="bx bxl-facebook-circle text-lg sm:text-xl"></i>
+    </a>
+    <a
+      href="#"
+      class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300"
+      aria-label="Instagram"
+    >
+      <i class="bx bxl-instagram text-lg sm:text-xl"></i>
+    </a>
+    <a
+      href="https://github.com/Powza72"
+      class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-orange rounded-full text-orange hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300"
+      aria-label="GitHub"
+    >
+      <i class="bx bxl-github text-lg sm:text-xl"></i>
+    </a>
+  </div>
+</section>
 
     <!-- About Section -->
     <section
@@ -456,8 +471,8 @@
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <i class="bx bxl-python text-blue-300 text-4xl mb-2"></i>
-            <p class="text-white">Python</p>
+            <i class="bx bxl-react text-react text-4xl mb-2"></i>
+            <p class="text-white">React</p>
           </div>
           <div
             class="bg-[#2c2c2c] p-6 rounded-2xl shadow-lg"
@@ -523,9 +538,14 @@
     <script>
       // Initialize AOS
       AOS.init();
+      
+
+      
     </script>
     <script src="AutoType.js"></script>
     <script src="hidden.js"></script>
     <script src="responsive.js"></script>
+    <script src="smoothscroll.js"></script>
+    <script></script>
   </body>
 </html>
