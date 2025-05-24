@@ -231,3 +231,198 @@
           background-position: 0% 50%;
         }
       }
+
+       body {
+        background-color: #121212; /* Using the new darkBg color */
+        font-family: "Poppins", sans-serif;
+        color: #e0e0e0; /* Using the new lightText color */
+      }
+
+      /* Custom styles for Hero Section background */
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+        background: linear-gradient(
+          45deg,
+          rgba(18, 18, 18, 0.9) 0%,
+          rgba(30, 30, 30, 0.9) 100%
+        ); /* Subtle gradient */
+      }
+
+      .floating-shapes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .shape {
+        position: absolute;
+        background: rgba(227, 82, 5, 0.1); /* Primary color, very subtle */
+        border-radius: 50%;
+        filter: blur(80px); /* Soft blur effect */
+        animation: float 20s infinite ease-in-out alternate;
+      }
+
+      .shape:nth-child(1) {
+        width: 150px;
+        height: 150px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+      }
+      .shape:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        top: 60%;
+        left: 80%;
+        background: rgba(255, 179, 0, 0.1); /* Secondary color, very subtle */
+        animation-delay: 5s;
+      }
+      .shape:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        top: 30%;
+        left: 40%;
+        animation-delay: 10s;
+      }
+      .shape:nth-child(4) {
+        width: 180px;
+        height: 180px;
+        top: 80%;
+        left: 20%;
+        animation-delay: 15s;
+      }
+      .shape:nth-child(5) {
+        width: 120px;
+        height: 120px;
+        top: 5%;
+        left: 70%;
+        animation-delay: 20s;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0) translateX(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) translateX(10px) rotate(5deg);
+        }
+        100% {
+          transform: translateY(0) translateX(0) rotate(0deg);
+        }
+      }
+
+      .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: radial-gradient(
+          #e0e0e0 1px,
+          transparent 1px
+        ); /* Light dots */
+        background-size: 20px 20px;
+        opacity: 0.05; /* Very subtle */
+      }
+
+      .grid-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(
+            to right,
+            rgba(227, 82, 5, 0.05) 1px,
+            transparent 1px
+          ),
+          linear-gradient(to bottom, rgba(227, 82, 5, 0.05) 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.1;
+      }
+
+      .pulse-light {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(255, 179, 0, 0.2) 0%,
+          transparent 70%
+        ); /* Soft golden glow */
+        border-radius: 50%;
+        filter: blur(100px);
+        animation: pulseLight 4s infinite ease-in-out;
+      }
+
+      @keyframes pulseLight {
+        0%, 100% {
+          transform: translate(-50%, -50%) scale(0.8);
+          opacity: 0.4;
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.2);
+          opacity: 0.8;
+        }
+      }
+
+      .animated-border {
+        position: relative;
+        padding: 2.5rem; /* Increased padding */
+        border-radius: 0.75rem; /* Rounded corners */
+        background-color: rgba(30, 30, 30, 0.8); /* mediumBg with transparency */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+        backdrop-filter: blur(5px); /* Frosted glass effect */
+        border: 1px solid rgba(227, 82, 5, 0.3); /* Subtle primary border */
+      }
+
+      
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #e35205;
+        }
+      }
+
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1e1e1e;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #e35205;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffb300;
+      }
