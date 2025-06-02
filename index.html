@@ -19,6 +19,7 @@
     />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="section.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -37,22 +38,9 @@
               sans: ["Poppins", "sans-serif"],
               mono: ["Fira Code", "monospace"],
               heading: ["Montserrat", "sans-serif"], // A new font for headings
-              type:["font-family: 'Fira Code', 'Courier New', Courier, monospace;"]
-            },
-            animation: {
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-              'bounce-slow': 'bounce 2s infinite',
-              'pulse-light': 'pulseLight 4s infinite ease-in-out',
-            },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: 0, transform: 'translateY(20px)' },
-                '100%': { opacity: 1, transform: 'translateY(0)' },
-              },
-              bounceLight: { // Custom keyframe for pulsing light
-                '0%, 100%': { transform: 'scale(0.8)', opacity: '0.4' },
-                '50%': { transform: 'scale(1.2)', opacity: '0.8' },
-              }
+              type: [
+                "font-family: 'Fira Code', 'Courier New', Courier, monospace;",
+              ],
             },
           },
         },
@@ -62,8 +50,6 @@
       html {
         scroll-behavior: smooth;
       }
-     
-      
     </style>
   </head>
   <body class="bg-darkBg font-sans text-lightText m-0 p-0">
@@ -89,35 +75,45 @@
           class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-secondary transition-colors duration-300 smooth-scroll relative group"
         >
           Home
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
         </a>
         <a
           href="#about"
           class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-secondary transition-colors duration-300 smooth-scroll relative group"
         >
           About Me
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
         </a>
         <a
           href="#education"
           class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-secondary transition-colors duration-300 smooth-scroll relative group"
         >
           Education
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
         </a>
         <a
-          href="#projects"
+          href="#Activities and Projects"
           class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-secondary transition-colors duration-300 smooth-scroll relative group"
         >
           Activities and Projects
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
         </a>
         <a
           href="#skills"
           class="text-base lg:text-lg font-bold ml-5 lg:ml-9 hover:text-secondary transition-colors duration-300 smooth-scroll relative group"
         >
           Skills
-          <span class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          <span
+            class="absolute left-0 bottom-0 w-full h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
         </a>
       </nav>
     </header>
@@ -126,11 +122,16 @@
       id="mobileMenu"
       class="fixed top-0 left-0 w-full h-full bg-darkBg bg-opacity-95 z-40 flex flex-col items-center justify-center transform -translate-x-full transition-transform duration-300 md:hidden"
     >
-      <button id="closeBtn" class="absolute top-5 left-5 text-3xl text-lightText">
+      <button
+        id="closeBtn"
+        class="absolute top-5 left-5 text-3xl text-lightText"
+      >
         <i class="bx bx-x"></i>
       </button>
       <nav class="flex flex-col items-center space-y-8">
-        <a href="#" class="text-xl font-bold hover:text-secondary transition-colors duration-300 smooth-scroll"
+        <a
+          href="#"
+          class="text-xl font-bold hover:text-secondary transition-colors duration-300 smooth-scroll"
           >Home</a
         >
         <a
@@ -156,39 +157,61 @@
       </nav>
     </div>
 
-    <section class="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16 overflow-hidden">
+    <section
+      class="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16 overflow-hidden"
+    >
+      <div class="max-w-xl mx-auto relative z-10">
+        <div class="hero-content animated-border">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-5 text-white"
+          >
+            Panaton <span class="text-primary">Bunpasan</span>
+          </h1>
+          <h3
+            id="developer"
+            class="font-['Courier_New'] text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-3 sm:mb-4 typing-animation"
+          >
+            I want to be a Full-Stack dev
+          </h3>
+          <p class="text-sm sm:text-base mt-3 text-gray-200">
+            ผมชื่อ ปัณณธร บุญประสาร ผมมีความสนใจในด้าน Web Development
+            และตั้งใจพัฒนาทักษะของตัวเองเพื่อก้าวไปสู่การเป็น Web Developer
+            ที่สามารถสร้างสรรค์เว็บไซต์ที่มีคุณภาพและตอบโจทย์การใช้งานจริงได้
+          </p>
+        </div>
+      </div>
 
-  <div class="max-w-xl mx-auto relative z-10">
-    <div class="hero-content animated-border">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-5 text-white">
-        Panaton <span class="text-primary">Bunpasan</span>
-      </h1>
-      <h3 id="developer" class="font-['Courier_New'] text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-3 sm:mb-4 typing-animation">I want to be a Full-Stack dev</h3>
-      <p class="text-sm sm:text-base mt-3 text-gray-200">
-        ผมชื่อ ปัณณธร บุญประสาร ผมมีความสนใจในด้าน Web Development
-        และตั้งใจพัฒนาทักษะของตัวเองเพื่อก้าวไปสู่การเป็น Web Developer
-        ที่สามารถสร้างสรรค์เว็บไซต์ที่มีคุณภาพและตอบโจทย์การใช้งานจริงได้
-      </p>
-    </div>
-  </div>
-
-  <!-- Social Media Links -->
-  <div class="mt-12 sm:mt-16 md:absolute md:bottom-16 flex space-x-4 relative z-10">
-    <a href="https://www.facebook.com/panaton.bunpasan" class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-primary rounded-full text-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300" aria-label="Facebook">
-      <i class="bx bxl-facebook-circle text-lg sm:text-xl"></i>
-    </a>
-    <a href="#" class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-primary rounded-full text-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300" aria-label="Instagram">
-      <i class="bx bxl-instagram text-lg sm:text-xl"></i>
-    </a>
-    <a href="https://github.com/Powza72" class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-primary rounded-full text-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300" aria-label="GitHub">
-      <i class="bx bxl-github text-lg sm:text-xl"></i>
-    </a>
-  </div>
-</section>
+      <!-- Social Media Links -->
+      <div
+        class="mt-12 sm:mt-16 md:absolute md:bottom-16 flex space-x-4 relative z-10"
+      >
+        <a
+          href="https://www.facebook.com/panaton.bunpasan"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-primary rounded-full text-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300"
+          aria-label="Facebook"
+        >
+          <i class="bx bxl-facebook-circle text-lg sm:text-xl"></i>
+        </a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-primary rounded-full text-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300"
+          aria-label="Instagram"
+        >
+          <i class="bx bxl-instagram text-lg sm:text-xl"></i>
+        </a>
+        <a
+          href="https://github.com/Powza72"
+          class="flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-primary rounded-full text-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-orange/50 transition-all duration-300"
+          aria-label="GitHub"
+        >
+          <i class="bx bxl-github text-lg sm:text-xl"></i>
+        </a>
+      </div>
+    </section>
 
     <section
       id="about"
-      class="py-12 sm:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto"
+      class="py-12 sm:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto mt-32"
     >
       <div
         class="text-center mb-8 sm:mb-12"
@@ -215,8 +238,8 @@
           <p class="mb-4 leading-relaxed text-sm sm:text-base">
             Hello, I'm
             <span class="text-primary font-bold"> Panaton Bunprasan</span>. I'm
-            currently a Grade 12 student in the Science-Technology program at the
-            Demonstration School of Ubon Ratchathani University.
+            currently a Grade 12 student in the Science-Technology program at
+            the Demonstration School of Ubon Ratchathani University.
           </p>
           <p class="mb-4 leading-relaxed text-sm sm:text-base">
             I enjoy working on projects involving programming, algorithm
@@ -244,7 +267,11 @@
 
     <section id="education" class="py-12 sm:py-16 max-w-7xl mx-auto px-4">
       <div class="text-center mb-8 sm:mb-12">
-        <h2 class="font-heading text-4xl sm:text-5xl font-extrabold text-primary mb-4 inline-block relative border-b-4 border-secondary pb-2">Education</h2>
+        <h2
+          class="font-heading text-4xl sm:text-5xl font-extrabold text-primary mb-4 inline-block relative border-b-4 border-secondary pb-2"
+        >
+          Education
+        </h2>
         <p class="text-base sm:text-lg text-grayText max-w-3xl mx-auto mt-4">
           Journey through my academic life.
         </p>
@@ -258,7 +285,10 @@
           <h3 class="text-2xl font-bold text-primary mb-2">Primary 1–4</h3>
           <p class="text-grayText text-lg">Assumption Ubon</p>
           <p class="text-grayText mt-2 text-sm">2011 - 2015</p>
-          <p class="mt-3 leading-relaxed">Started my education journey at Assumption Ubon, laying the foundation for future learning.</p>
+          <p class="mt-3 leading-relaxed">
+            Started my education journey at Assumption Ubon, laying the
+            foundation for future learning.
+          </p>
         </div>
 
         <div
@@ -270,21 +300,27 @@
             Satit Demonstration School Ubonratchathani
           </p>
           <p class="text-grayText mt-2 text-sm">2015 - 2018</p>
-          <p class="mt-3 leading-relaxed">Continued my primary education at Satit Demonstration School, focusing on core subjects and initial skill development.</p>
+          <p class="mt-3 leading-relaxed">
+            Continued my primary education at Satit Demonstration School,
+            focusing on core subjects and initial skill development.
+          </p>
         </div>
 
         <div
           class="education-item bg-mediumBg p-6 rounded-xl shadow-lg border-l-4 border-primary hidden"
           data-aos="fade-up"
         >
-          <h3 class="text-2xl font-bold text-primary mb-2">Lower Secondary School</h3>
+          <h3 class="text-2xl font-bold text-primary mb-2">
+            Lower Secondary School
+          </h3>
           <p class="text-grayText text-lg">
             Satit Demonstration School Ubonratchathani
           </p>
           <p class="text-grayText mt-2 text-sm">2018 - 2021</p>
           <p class="mt-3 leading-relaxed">
-            Completed my lower secondary education with a strong emphasis on science and
-            mathematics, sparking my interest in analytical thinking and problem-solving.
+            Completed my lower secondary education with a strong emphasis on
+            science and mathematics, sparking my interest in analytical thinking
+            and problem-solving.
           </p>
         </div>
 
@@ -292,14 +328,17 @@
           class="education-item bg-mediumBg p-6 rounded-xl shadow-lg border-l-4 border-primary hidden"
           data-aos="fade-up"
         >
-          <h3 class="text-2xl font-bold text-primary mb-2">Upper Secondary School</h3>
+          <h3 class="text-2xl font-bold text-primary mb-2">
+            Upper Secondary School
+          </h3>
           <p class="text-grayText text-lg">
             Satit Demonstration School Ubonratchathani
           </p>
           <p class="text-grayText mt-2 text-sm">2021 - 2024</p>
           <p class="mt-3 leading-relaxed">
-            Specialized in the Science-Technology program, where I further developed my
-            passion for computer engineering through practical projects and advanced coursework.
+            Specialized in the Science-Technology program, where I further
+            developed my passion for computer engineering through practical
+            projects and advanced coursework.
           </p>
         </div>
       </div>
@@ -314,119 +353,523 @@
       </div>
     </section>
 
-    <section id="projects" class="py-12 sm:py-16 max-w-7xl mx-auto px-4">
-      <div class="text-center mb-8 sm:mb-12">
-        <h2 class="font-heading text-4xl sm:text-5xl font-extrabold text-primary mb-4 inline-block relative border-b-4 border-secondary pb-2">
-          Activities & Projects
-        </h2>
-        <p class="text-base sm:text-lg text-grayText max-w-3xl mx-auto mt-4">
-          A glimpse into my hands-on experiences and accomplishments.
-        </p>
+    <sectio  class="py-16 px-6 bg-darkBg" id="Activities and Projects">
+      <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h2
+            class="font-heading text-4xl sm:text-5xl font-extrabold text-primary mb-4 inline-block relative border-b-4 border-secondary pb-2"
+          >
+            Projects & Activities
+          </h2>
+          <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+            Explore my journey through innovative projects and meaningful
+            activities
+          </p>
+        </div>
+
+        <!-- Toggle Buttons -->
+        <div class="flex justify-center gap-6 mb-12">
+          <button
+            onclick="showSection('projects')"
+            id="projects-btn"
+            class="toggle-btn bg-primary px-8 py-4 font-bold text-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            <span class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                ></path>
+              </svg>
+              Projects
+            </span>
+          </button>
+          <button
+            onclick="showSection('activities')"
+            id="activities-btn"
+            class="toggle-btn px-8 py-4 font-bold text-primary bg-white dark:bg-gray-800 dark:text-indigo-400 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 border border-indigo-200 dark:border-indigo-800"
+          >
+            <span class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                ></path>
+              </svg>
+              Activities
+            </span>
+          </button>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects-section" class="section-transition fade-in">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg ">
+              <div class="relative mb-6">
+                <div
+                  class="w-full h-48 bg-darkBg from-indigo-400 to-purple-500 rounded-2xl flex items-center justify-center"
+                >
+                  <img src="/image.png" alt="" srcset="" />
+                </div>
+                <div
+                  class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <h4 class="font-bold text-xl text-primary dark:text-white mb-3">
+                Game Compatibility Checker
+              </h4>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed"
+              >
+                A full-stack e-commerce solution with modern design, secure
+                payments, and admin dashboard.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-primary dark:bg-blue-900 text-white dark:text-blue-200 text-xs rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full"
+                  >Tailwind</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <button
+                  onclick="window.location.href='https://powza72.github.io/game-spec-checker/'"
+                  class="flex-1 bg-primary hover: px-4 py-2 rounded-xl text-sm font-medium transition-colors"
+                >
+                  View Demo
+                </button>
+                <button
+                  onclick="window.location.href='https://github.com/Powza72/game-spec-checker'"
+                  class="px-4 py-2 border border-primary text-primary dark:text-indigo-400 rounded-xl text-sm font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900 transition-colors"
+                >
+                  GitHub
+                </button>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg ">
+              <div class="relative mb-6">
+                <div
+                  class="w-full h-48 bg-gradient-to-br from-pink-400 to-red-500 rounded-2xl flex items-center justify-center"
+                >
+                  <svg
+                    class="w-16 h-16 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <h4 class="font-bold text-xl text-gray-800 dark:text-white mb-3">
+                Mobile Weather App
+              </h4>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed"
+              >
+                Beautiful weather application with real-time data, forecasts,
+                and location-based services.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full"
+                  >React Native</span
+                >
+                <span
+                  class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full"
+                  >API</span
+                >
+                <span
+                  class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full"
+                  >Redux</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <button
+                  class="flex-1 bg-primary hover: text-white px-4 py-2 rounded-xl text-sm font-medium transition-colors"
+                >
+                  View Demo
+                </button>
+                <button
+                  class="px-4 py-2 border border-primary text-white dark:text-indigo-400 rounded-xl text-sm font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900 transition-colors"
+                >
+                  GitHub
+                </button>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg ">
+              <div class="relative mb-6">
+                <div
+                  class="w-full h-48 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl flex items-center justify-center"
+                >
+                  <svg
+                    class="w-16 h-16 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <h4 class="font-bold text-xl text-gray-800 dark:text-white mb-3">
+                Analytics Dashboard
+              </h4>
+              <p
+                class="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed"
+              >
+                Real-time analytics dashboard with interactive charts and
+                comprehensive data visualization.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full"
+                  >Vue.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs rounded-full"
+                  >D3.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full"
+                  >Firebase</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <button
+                  class="flex-1 bg-primary hover: text-white px-4 py-2 rounded-xl text-sm font-medium transition-colors"
+                >
+                  View Demo
+                </button>
+                <button
+                  class="px-4 py-2 border border-primary text-white dark:text-indigo-400 rounded-xl text-sm font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900 transition-colors"
+                >
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activities Section -->
+        <div id="activities-section" class="section-transition hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <!-- Activity Card 1 -->
+            <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg card-hover">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="{1.5}"
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="font-bold text-xl text-primary dark:text-white mb-2"
+                  >
+                    THAILAND ROBOT & CODING CHALLENGE 2025
+                  </h4>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-sm mb-3 leading-relaxed"
+                  >
+                    Participated in this national competition that challenged my robotics and coding skills. Our team developed an innovative solution that earned us an Honorable Mention, showcasing our technical abilities and teamwork.
+                  </p>
+                  <div
+                    class="flex items-center gap-2 text-primary dark:text-indigo-400 text-sm font-medium"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    May 2025
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Activity Card 2 -->
+            <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg card-hover ">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="font-bold text-xl text-primary dark:text-white mb-2"
+                  >
+                     ComCamp 36
+                  </h4>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-sm mb-3 leading-relaxed"
+                  >
+                    Held at King Mongkut's University of Technology Thonburi (KMUTT), this was the first camp I decided to apply for and I was one of the 100 participants selected out of approximately 2,000 applicants. Throughout the camp I gained hands-on experience in several areas including C Programming, Web Development, Game Development, and AI Development.
+                  </p>
+                  <div
+                    class="flex items-center gap-2 text-primary dark:text-green-400 text-sm font-medium"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    Aprill 2024
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Activity Card 3 -->
+            <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg card-hover">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="font-bold text-xl text-primary dark:text-white mb-2"
+                  >
+                    ITCAMP 21 - The Glacial Horizon
+                  </h4>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-sm mb-3 leading-relaxed"
+                  >
+                    An intensive IT-focused camp where I had the opportunity to collaborate with like-minded peers and learn from industry professionals. The camp focused on emerging technologies and practical application of IT concepts that complemented my academic studies perfectly.
+                  </p>
+                  <div
+                    class="flex items-center gap-2 text-primary dark:text-purple-400 text-sm font-medium"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    Ongoing
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Activity Card 4 -->
+            <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg card-hover">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="font-bold text-xl text-primary dark:text-white mb-2"
+                  >
+                    SiSaKet Hackathon 2024
+                  </h4>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-sm mb-3 leading-relaxed"
+                  >
+                    My very first hackathon and also my first experience programming in Swift. The competition lasted three days and two nights. This event ignited my passion for coding and gave me the opportunity to present my project for the first time in front of an audience at a conference room.
+                  </p>
+                  <div
+                    class="flex items-center gap-2 text-orange-600 dark:text-orange-400 text-sm font-medium"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    January 2025
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="space-y-8 text-lightText">
-        <div
-          class="project-item bg-mediumBg p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl hover:border-l-8 transform transition-all duration-300 ease-in-out"
-          data-aos="fade-up"
-        >
-          <h3 class="mt-6 mb-4 text-2xl font-bold text-primary">
-            Activity 1: SiSaKet Hackathon 2024
-          </h3>
-          <p class="leading-relaxed mb-4">
-            My very first hackathon and also my first experience programming in
-            <span class="text-primary font-bold"> Swift. </span> The competition
-            lasted three days and two nights. This event ignited my passion for
-            coding and gave me the opportunity to present my project for the
-            first time in front of an audience at a conference room.
-          </p>
-          <a
-            href="swift.html"
-            class="inline-block mt-4 rounded-full border-2 border-primary bg-gradient-to-r from-primary to-orange-400 text-white font-semibold px-6 py-2 shadow-md hover:shadow-lg hover:shadow-primary/50 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-in-out"
-          >
-            Read More →
-          </a>
-        </div>
-
-        <div
-          class="project-item bg-mediumBg p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl hover:border-l-8 transform transition-all duration-300 ease-in-out"
-          data-aos="fade-up"
-        >
-          <h3 class="mt-6 mb-4 text-2xl font-bold text-primary">
-            Activity 2: ComCamp 36
-          </h3>
-          <p class="leading-relaxed mb-4">
-            Held at King Mongkut's University of Technology Thonburi (KMUTT),
-            this was the first camp I decided to apply for and I was
-            <span class="font-bold text-secondary"
-              >one of the 100 participants</span
-            >
-            selected out of approximately 2,000 applicants. Throughout the camp
-            I gained hands-on experience in several areas including C
-            Programming, Web Development, Game Development, and AI Development.
-          </p>
-          <a
-            href="ComCamp.html"
-            class="inline-block mt-4 rounded-full border-2 border-primary bg-gradient-to-r from-primary to-orange-400 text-white font-semibold px-6 py-2 shadow-md hover:shadow-lg hover:shadow-primary/50 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-in-out"
-          >
-            Read More →
-          </a>
-        </div>
-
-        <div
-          class="project-item bg-mediumBg p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl hover:border-l-8 transform transition-all duration-300 ease-in-out"
-          data-aos="fade-up"
-        >
-          <h3 class="mt-6 mb-4 text-2xl font-bold text-primary">
-            Activity 3: ITCAMP 21 - The Glacial Horizon
-          </h3>
-          <p class="leading-relaxed mb-4">
-            An intensive IT-focused camp where I had the opportunity to
-            collaborate with like-minded peers and learn from industry
-            professionals. The camp focused on emerging technologies and
-            practical application of IT concepts that complemented my academic
-            studies perfectly.
-          </p>
-          <a
-            href="itcamp.html"
-            class="inline-block mt-4 rounded-full border-2 border-primary bg-gradient-to-r from-primary to-orange-400 text-white font-semibold px-6 py-2 shadow-md hover:shadow-lg hover:shadow-primary/50 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-in-out"
-          >
-            Read More →
-          </a>
-        </div>
-
-        <div
-          class="project-item bg-mediumBg p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl hover:border-l-8 transform transition-all duration-300 ease-in-out"
-          data-aos="fade-up"
-        >
-          <h3 class="mt-6 mb-4 text-2xl font-bold text-primary">
-            Activity 4: Thailand Robot & Coding Challenge 2025 <br /><span
-              class="text-sliver text-lg font-medium"
-              >Honorable Mention</span
-            >
-          </h3>
-          <p class="leading-relaxed mb-4">
-            Participated in this national competition that challenged my
-            robotics and coding skills. Our team developed an innovative
-            solution that earned us an Honorable Mention, showcasing our
-            technical abilities and teamwork.
-          </p>
-          <a
-            href="Coding.html"
-            class="inline-block mt-4 rounded-full border-2 border-primary bg-gradient-to-r from-primary to-orange-400 text-white font-semibold px-6 py-2 shadow-md hover:shadow-lg hover:shadow-primary/50 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-in-out"
-          >
-            Read More →
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="py-16 px-6 sm:px-8 lg:px-16" data-aos="fade-up">
+    </sectio>
+    <section id="skills" class="py-16 px-6 sm:px-8 lg:px-16 mt-32 data-aos="fade-up">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="font-heading text-4xl sm:text-5xl font-extrabold text-secondary mb-8 inline-block relative border-b-4 border-primary pb-2">Skills</h2>
+        <h2
+          class="font-heading text-4xl sm:text-5xl font-extrabold text-secondary mb-8 inline-block relative border-b-4 border-primary pb-2"
+        >
+          Skills
+        </h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
           <div
             class="bg-mediumBg p-6 rounded-2xl shadow-xl border border-gray-700 flex flex-col items-center justify-center transform hover:scale-105 hover:shadow-2xl transition-all duration-300 group"
             data-aos="zoom-in"
           >
-            <i class="bx bxl-html5 text-primary text-5xl mb-2 group-hover:text-secondary transition-colors"></i>
+            <i
+              class="bx bxl-html5 text-primary text-5xl mb-2 group-hover:text-secondary transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">HTML</p>
           </div>
           <div
@@ -434,7 +877,9 @@
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <i class="bx bxl-css3 text-blue-400 text-5xl mb-2 group-hover:text-sky-300 transition-colors"></i>
+            <i
+              class="bx bxl-css3 text-blue-400 text-5xl mb-2 group-hover:text-sky-300 transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">CSS</p>
           </div>
           <div
@@ -442,7 +887,9 @@
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <i class="bx bxl-javascript text-yellow-400 text-5xl mb-2 group-hover:text-yellow-300 transition-colors"></i>
+            <i
+              class="bx bxl-javascript text-yellow-400 text-5xl mb-2 group-hover:text-yellow-300 transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">JavaScript</p>
           </div>
           <div
@@ -450,7 +897,9 @@
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <i class="bx bxl-react text-react text-5xl mb-2 group-hover:text-blue-300 transition-colors"></i>
+            <i
+              class="bx bxl-react text-react text-5xl mb-2 group-hover:text-blue-300 transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">React</p>
           </div>
           <div
@@ -458,7 +907,9 @@
             data-aos="zoom-in"
             data-aos-delay="400"
           >
-            <i class="bx bxl-tailwind-css text-cyan-300 text-5xl mb-2 group-hover:text-cyan-200 transition-colors"></i>
+            <i
+              class="bx bxl-tailwind-css text-cyan-300 text-5xl mb-2 group-hover:text-cyan-200 transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">Tailwind CSS</p>
           </div>
           <div
@@ -466,7 +917,9 @@
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <i class="bx bxl-figma text-red-400 text-5xl mb-2 group-hover:text-red-300 transition-colors"></i>
+            <i
+              class="bx bxl-figma text-red-400 text-5xl mb-2 group-hover:text-red-300 transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">Figma</p>
           </div>
           <div
@@ -474,7 +927,9 @@
             data-aos="zoom-in"
             data-aos-delay="600"
           >
-            <i class="bx bxl-git text-orange-500 text-5xl mb-2 group-hover:text-secondary transition-colors"></i>
+            <i
+              class="bx bxl-git text-orange-500 text-5xl mb-2 group-hover:text-secondary transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">Git</p>
           </div>
           <div
@@ -482,19 +937,29 @@
             data-aos="zoom-in"
             data-aos-delay="700"
           >
-            <i class="bx bxl-github text-white text-5xl mb-2 group-hover:text-gray-400 transition-colors"></i>
+            <i
+              class="bx bxl-github text-white text-5xl mb-2 group-hover:text-gray-400 transition-colors"
+            ></i>
             <p class="text-lightText font-semibold">GitHub</p>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-darkBg text-lightText py-10 mt-16 border-t border-gray-800">
+    <footer
+      class="bg-darkBg text-lightText py-10 mt-16 border-t border-gray-800"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-center pb-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pb-8"
+        >
           <div class="mb-6 md:mb-0 text-center md:text-left">
-            <h3 class="text-2xl font-bold text-primary font-heading">Panaton Bunpasan</h3>
-            <p class="text-base text-grayText mt-2">Science–Technology Student & Aspiring Web Developer</p>
+            <h3 class="text-2xl font-bold text-primary font-heading">
+              Panaton Bunpasan
+            </h3>
+            <p class="text-base text-grayText mt-2">
+              Science–Technology Student & Aspiring Web Developer
+            </p>
           </div>
           <div class="flex space-x-6">
             <a
@@ -529,17 +994,19 @@
         </div>
         <div class="border-t border-gray-700 mt-8 pt-8 text-center">
           <p class="text-sm text-gray-500">
-            © 2025 Panaton Bunpasan. All rights reserved. Built with passion and code.
+            © 2025 Panaton Bunpasan. All rights reserved. Built with passion and
+            code.
           </p>
         </div>
       </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
       AOS.init({
         duration: 1000,
-        once: true, // Only animate once
+        once: false, // Only animate once
         mirror: false, // Whether elements should animate out while scrolling past them
       });
     </script>
@@ -547,5 +1014,23 @@
     <script src="hidden.js"></script>
     <script src="responsive.js"></script>
     <script src="smoothscroll.js"></script>
+    <script>
+      function showSection(section) {
+        const projectsSection = document.getElementById("projects-section");
+        const activitiesSection = document.getElementById("activities-section");
+        const projectsBtn = document.getElementById("projects-btn");
+        const activitiesBtn = document.getElementById("activities-btn");
+
+        if (section === "projects") {
+          // Show projects, hide activities
+          projectsSection.classList.remove("hidden");
+          activitiesSection.classList.add("hidden");
+        } else {
+          // Show activities, hide projects
+          activitiesSection.classList.remove("hidden");
+          projectsSection.classList.add("hidden");
+        }
+      }
+    </script>
   </body>
 </html>
