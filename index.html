@@ -130,7 +130,7 @@
       </button>
       <nav class="flex flex-col items-center space-y-8">
         <a
-          href="#"
+          href="#home"
           class="text-xl font-bold hover:text-secondary transition-colors duration-300 smooth-scroll"
           >Home</a
         >
@@ -158,7 +158,8 @@
     </div>
 
     <section
-      class="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16 overflow-hidden"
+      class="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-[10%] pt-24 pb-16 overflow-hidden "
+      id
     >
       <div class="max-w-xl mx-auto relative z-10">
         <div class="hero-content animated-border">
@@ -371,49 +372,54 @@
         <!-- Toggle Buttons -->
         <div class="flex justify-center gap-6 mb-12">
           <button
-            onclick="showSection('projects')"
-            id="projects-btn"
-            class="toggle-btn bg-primary px-8 py-4 font-bold text-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105"
-          >
-            <span class="flex items-center gap-2">
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                ></path>
-              </svg>
-              Projects
-            </span>
-          </button>
-          <button
-            onclick="showSection('activities')"
-            id="activities-btn"
-            class="toggle-btn px-8 py-4 font-bold text-primary bg-darkBg dark:bg-gray-800 dark:text-indigo-400 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 border border-primary dark:border-indigo-800"
-          >
-            <span class="flex items-center gap-2">
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                ></path>
-              </svg>
-              Activities
-            </span>
-          </button>
+  onclick="showSection('projects')"
+  id="projects-btn"
+  class="toggle-btn bg-primary px-8 py-4 font-bold text-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
+  aria-controls="projects-section"
+  aria-expanded="true"
+>
+  <span class="flex items-center gap-2">
+    <svg
+      class="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+      ></path>
+    </svg>
+    Projects
+  </span>
+</button>
+
+<button
+  onclick="showSection('activities')"
+  id="activities-btn"
+  class="toggle-btn px-8 py-4 font-bold text-primary bg-darkBg dark:bg-gray-800 dark:text-indigo-400 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-primary dark:border-indigo-800"
+  aria-controls="activities-section"
+  aria-expanded="false"
+>
+  <span class="flex items-center gap-2">
+    <svg
+      class="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+      ></path>
+    </svg>
+    Activities
+  </span>
+</button>
         </div>
 
         <!-- Projects Section -->
@@ -1015,22 +1021,36 @@
     <script src="responsive.js"></script>
     <script src="smoothscroll.js"></script>
     <script>
-      function showSection(section) {
+       function showSection(sectionId) {
         const projectsSection = document.getElementById("projects-section");
         const activitiesSection = document.getElementById("activities-section");
         const projectsBtn = document.getElementById("projects-btn");
         const activitiesBtn = document.getElementById("activities-btn");
 
-        if (section === "projects") {
-          // Show projects, hide activities
+        if (sectionId === "projects") {
           projectsSection.classList.remove("hidden");
+          projectsSection.classList.add("fade-in");
           activitiesSection.classList.add("hidden");
-        } else {
-          // Show activities, hide projects
+          activitiesSection.classList.remove("fade-in");
+
+          projectsBtn.classList.add("bg-primary", "text-white");
+          projectsBtn.classList.remove("bg-darkBg", "text-primary", "border");
+          activitiesBtn.classList.remove("bg-primary", "text-white");
+          activitiesBtn.classList.add("bg-darkBg", "text-primary", "border");
+        } else if (sectionId === "activities") {
           activitiesSection.classList.remove("hidden");
+          activitiesSection.classList.add("fade-in");
           projectsSection.classList.add("hidden");
+          projectsSection.classList.remove("fade-in");
+
+          activitiesBtn.classList.add("bg-primary", "text-white");
+          activitiesBtn.classList.remove("bg-darkBg", "text-primary", "border");
+          projectsBtn.classList.remove("bg-primary", "text-white");
+          projectsBtn.classList.add("bg-darkBg", "text-primary", "border");
         }
+        AOS.refresh(); // Refresh AOS to trigger animations on the newly visible section
       }
+      
     </script>
   </body>
 </html>
