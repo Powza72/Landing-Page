@@ -636,7 +636,7 @@
             <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg ">
               <div class="relative mb-6">
                 <div
-                  class="w-full h-48 bg-gradient-to-br from-pink-400 to-red-500 rounded-2xl flex items-center justify-center"
+                  class="w-full h-48 bg-gradient-to-br from-black-400 to-red-500 rounded-2xl flex items-center justify-center"
                 >
                 <img src="game.png" alt="">
                   <svg
@@ -654,7 +654,7 @@
                   </svg>
                 </div>
                 <div
-                  class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center"
+                  class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center"
                 >
                   <svg
                     class="w-4 h-4 text-white"
@@ -666,7 +666,7 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
+                      d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
                 </div>
@@ -713,8 +713,9 @@
             <div class="bg-mediumBg p-6 sm:p-8 rounded-xl shadow-lg ">
               <div class="relative mb-6">
                 <div
-                  class="w-full h-48 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl flex items-center justify-center"
+                  class="w-full h-48 rounded-2xl flex items-center justify-center"
                 >
+                <img src="fall.jpg" alt="">
                   <svg
                     class="w-16 h-16 text-white"
                     fill="none"
@@ -730,7 +731,7 @@
                   </svg>
                 </div>
                 <div
-                  class="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"
+                  class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center"
                 >
                   <svg
                     class="w-4 h-4 text-white"
@@ -742,32 +743,28 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                      d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
                 </div>
               </div>
               <h4 class="font-bold text-xl text-primary  mb-3">
-                Analytics Dashboard
+                Fall Detection
+
               </h4>
               <p
                 class="text-gray-600  text-sm mb-4 leading-relaxed"
               >
-                Real-time analytics dashboard with interactive charts and
-                comprehensive data visualization.
+                In this project, I used the YOLO pre-trained model (yolo11n.pt) from Ultralytics with Python (Flask) to process real-time video and stream MJPEG frames to a web browser. The website was built with HTML, CSS, and JavaScript to display the video. If a fall is detected, the system captures an image and sends an email alert.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
                   class="px-3 py-1 bg-orange-100  text-orange-800  text-xs rounded-full"
-                  >Vue.js</span
+                  >PYTHON</span
                 >
                 <span
                   class="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs rounded-full"
-                  >D3.js</span
-                >
-                <span
-                  class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full"
-                  >Firebase</span
+                  >YOLO</span
                 >
               </div>
               <div class="flex gap-3">
